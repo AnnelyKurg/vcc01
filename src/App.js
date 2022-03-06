@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Container from 'react-bootstrap/Container';
+import Chat from './Chat';
 import './App.css';
+import Row from "react-bootstrap/Row";
+import logo from './VOCO-Logo.svg';
+import Col from "react-bootstrap/Col";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Container>
+        <Container fluid>
+          <Row>
+            <Col>
+              <img src={logo} className="App-logo p-2 float-start" alt="logo"/>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row className="App justify-content-center">
+            <Chat />
+          </Row>
+        </Container>
+
+      </Container>
   );
 }
 
