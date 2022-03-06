@@ -4,13 +4,13 @@
 }
 
 .App-logo {
-  height: 10vh;
+  height: 15vh;
   pointer-events: none;
 }
 
 #chatBox {
-  /*max-height: 80vh;*/
-  /*overflow-y: scroll;*/
+  max-height: 80vh;
+  overflow-y: scroll;
 }
 
 /*@media (prefers-reduced-motion: no-preference) {

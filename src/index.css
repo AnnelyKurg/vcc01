@@ -5,12 +5,13 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: radial-gradient(circle at top right, hotpink, blue 60%) no-repeat fixed;
+  background: radial-gradient(circle at top right, hotpink, blue 70%) no-repeat fixed;
 }
 
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+
 }
 
 /* Track */
@@ -21,13 +22,9 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: white;
-  border-radius: 50%;
+  width: 9px;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: navajowhite;
-}
 
 /*code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
